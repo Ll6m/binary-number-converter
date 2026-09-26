@@ -1,10 +1,10 @@
 # Binary Number Converter
 
-A Java command-line application that converts values between decimal and binary using custom conversion algorithms.
+A Java application that converts values between decimal and binary using custom conversion algorithms.
 
 ## Why I built it
 
-This project demonstrates core programming fundamentals that are useful in software engineering: decomposing a problem into focused methods, validating user input, handling exceptional cases, and reasoning about numeric overflow.
+This project demonstrates core programming fundamentals that are useful in software engineering, decomposing a problem into focused methods, validating user input, handling exceptional cases, and reasoning about numeric overflow.
 
 ## Features
 
