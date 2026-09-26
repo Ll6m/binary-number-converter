@@ -14,7 +14,7 @@ public class BinaryConverter {
                 printMenu();
                 String choice = scanner.nextLine().trim();
 
-                switch (choice) {
+                switch (choice) { //Switch case to determine function needed.
                     case "1":
                         convertDecimalInput(scanner);
                         break;
@@ -25,14 +25,14 @@ public class BinaryConverter {
                         running = false;
                         System.out.println("Goodbye!");
                         break;
-                    default:
+                    default: //handles any case where user inputs a value other than 1, 2, or 3.
                         System.out.println("Invalid choice. Please enter 1, 2, or 3.");
                 }
             }
         }
     }
 
-    private static void printMenu() {
+    private static void printMenu() { //function to print menu options
         System.out.println();
         System.out.println("1. Decimal to Binary");
         System.out.println("2. Binary to Decimal");
@@ -44,7 +44,7 @@ public class BinaryConverter {
         System.out.print("Enter a non-negative decimal number: ");
         String input = scanner.nextLine().trim();
 
-        try {
+        try { //Try catch block, which checks the input's validity
             long decimal = Long.parseLong(input);
             if (decimal < 0) {
                 System.out.println("Please enter a non-negative number.");
@@ -52,7 +52,7 @@ public class BinaryConverter {
             }
 
             System.out.println("Binary: " + decimalToBinary(decimal));
-        } catch (NumberFormatException exception) {
+        } catch (NumberFormatException exception) { 
             System.out.println("Invalid decimal number.");
         }
     }
